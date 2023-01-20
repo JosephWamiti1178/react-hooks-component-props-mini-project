@@ -1,12 +1,12 @@
-import React from 'react';
-import blogData from "../data/blog";
-        
+import React from "react";
 
-export function Header({title}){
-    return(
-        <div>
-            <h1>{title}</h1>
-        </div>
-          
-    )
+
+function Header(props) {
+  return (
+  <header>
+    <h1>{props.name}</h1>
+  </header>
+  );
 }
+
+export default Header;

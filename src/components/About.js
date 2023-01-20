@@ -1,9 +1,12 @@
 import REACT from 'react';
 
-export function About(props){
+function About({image ="https://via.placeholder.com/215",about}){
     return(
-       <aside>
-        <img src={props.image} alt={props.name}/>
-       </aside>
+        <aside>
+            <img src={image} alt="blog logo"/>
+            <p>{about}</p>
+        </aside>
     )
 }
+
+export default About
